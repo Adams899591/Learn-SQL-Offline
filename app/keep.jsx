@@ -49,6 +49,11 @@
 
 
 
+//  npx expo install expo-sqlite 
+// npx expo install expo-application expo-linking 
+//  npx expo install expo-system-ui
+
+
 
 
 // npx expo install expo-system-ui
