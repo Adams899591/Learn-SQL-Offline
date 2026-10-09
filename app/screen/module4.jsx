@@ -1040,7 +1040,7 @@ export default function AdvancedSQLScreen() {
           onPress={() => {
             stopRef.current = true;
             Speech.stop();
-            router.push('/screen/module5');
+            router.push('/(tabs)/sql');
           }}
           className="h-14 rounded-2xl overflow-hidden mb-4"
         >

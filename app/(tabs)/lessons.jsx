@@ -1,16 +1,3 @@
-// import React from 'react'
-// import { Text } from 'react-native'
-
-// function lesson() {
-//   return (
-//     <Text>this is the lesson screen </Text>
-//   )
-// }
-
-// export default lesson
-
-
-
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity, Image, StatusBar } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -66,25 +53,7 @@ const curriculumList = [
     completed: 0,
     topics: ['Relationships', 'Indexes', 'Views', 'Transactions', 'Constraints', 'Stored procedures'],
     screen: '/screen/module4',
-  },
-  {
-    id: '5',
-    title: 'Practice',
-    icon: 'flask',
-    color: '#22D3EE',
-    completed: 0,
-    topics: ['Quizzes', 'SQL challenges', 'Write the query exercises', 'Answers and explanations'],
-    screen: '/screen/module5',
-  },
-  {
-    id: '6',
-    title: 'Database-Specific',
-    icon: 'cube',
-    color: '#EC4899',
-    completed: 0,
-    topics: ['MySQL', 'PostgreSQL', 'SQLite'],
-    screen: '/screen/module6',
-  },
+  }
 ];
 
 const totalTopics = curriculumList.reduce((sum, s) => sum + s.topics.length, 0);
@@ -204,7 +173,7 @@ export default function LessonsScreen() {
                   {preview}{more > 0 ? `  +${more} more` : ''}
                 </Text>
 
-                <View className="flex-row items-center mt-2">
+                {/* <View className="flex-row items-center mt-2">
                   <View
                     className="flex-1 h-1.5 rounded-full overflow-hidden mr-2"
                     style={{ backgroundColor: 'rgba(148,163,184,0.25)' }}
@@ -217,7 +186,7 @@ export default function LessonsScreen() {
                   <Text className="text-[10px] font-semibold" style={{ color: C.muted }}>
                     {item.completed}/{item.topics.length} completed
                   </Text>
-                </View>
+                </View> */}
               </View>
 
               <Ionicons name="chevron-forward" size={18} color={C.muted} style={{ marginLeft: 8 }} />

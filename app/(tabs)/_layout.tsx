@@ -85,8 +85,6 @@ export default function TabsLayout() {
         tabBarStyle: {
           backgroundColor: BAR_BG,
           borderTopWidth: 0,
-          // borderTopLeftRadius: 24,
-          // borderTopRightRadius: 24,
           height: 60 + insets.bottom,
           paddingTop: 8,
           paddingBottom: insets.bottom > 0 ? insets.bottom : 8,
@@ -116,6 +114,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="quiz"
         options={{ title: 'Quiz', tabBarIcon: tabIcon('help-circle', 'help-circle-outline') }}
+      />
+      <Tabs.Screen
+        name="sql"
+        options={{ title: 'SQL', tabBarIcon: tabIcon('server', 'server-outline') }}
       />
     </Tabs>
   );
